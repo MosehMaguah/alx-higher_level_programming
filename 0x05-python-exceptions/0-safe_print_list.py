@@ -2,7 +2,6 @@
 
 def safe_print(my_list=[], x=0):
     """print x elements of a list"""
-
     ret = 0
     for i in range(x):
         try:
