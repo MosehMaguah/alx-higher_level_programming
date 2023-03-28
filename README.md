@@ -1,1 +1,2 @@
-classes in python
+
+starting pthon today
