@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""defining a rectangle based on 4-rectangle.py"""
+"""defining a rectangle"""
 
 
 class Rectangle:
-    """string representation of a rectangle"""
 
     number_of_instances = 0
     print_symbol = "#"

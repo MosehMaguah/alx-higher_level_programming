@@ -1,19 +1,17 @@
 #!/usr/bin/python3
-"""Create a Rectangle class."""
+"""Create Rectangle class."""
 
 
 class Rectangle:
-    """Definition a class rectangle."""
+    """Define rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initializing Rectangle.
-        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Get/set the width of the rectangle."""
+        """Get/set the width"""
         return self.__width
 
     @width.setter
@@ -26,7 +24,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get/set the height of the rectangle."""
+        """Get/set the height"""
         return self.__height
 
     @height.setter
@@ -38,21 +36,21 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Calculate the area of the rectangle."""
+        """Calculate area of rectangle."""
         return self.width * self.height
 
     def perimeter(self):
-        """Calculate the perimeter of the rectangle."""
+        """Calculate perimeter of rectangle."""
         if self.width == 0 or self.height == 0:
             return 0
             return (self.width + self.height) * 2
 
     def __str__(self):
-        """Print the rectangle."""
+        """Print rectangle."""
         if self.width == 0 or self.height == 0:
             return ""
         return ((("#" * self.width) + "\n") * self.height)[:-1]
 
     def __repr__(self):
-        """Print the rectangle using eval."""
+        """Print rectangle with eval."""
         return "Rectangle({}, {})".format(self.width, self.height)
