@@ -170,7 +170,8 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """A static method that opens a window and draws all the instances available"""
+        """static method that opens a window and
+        draws all the instances available"""
 
         import turtle
         import time
